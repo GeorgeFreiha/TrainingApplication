@@ -1,0 +1,20 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/signup"> Sign up </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div id="header">
+    <h1>Login</h1>
+    <img src="assets/N1-Training-Logo.png" />
+  </div>
+  <form id="form"#f="ngForm" (ngSubmit)="onLogin(f)" >
+    <app-input ngModel name = "email" placeholder="Email" ></app-input>
+    <app-input   ngModel name = "password" type="password" placeholder="Password"></app-input>
+    <ion-button type="submit" routerLink="/home" expand="block" shape="round"
+      >Login</ion-button
+    >
+  </form>
+</ion-content>

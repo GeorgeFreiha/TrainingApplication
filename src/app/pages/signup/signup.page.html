@@ -1,0 +1,20 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h1>Create Your<br />Account</h1>
+
+  <form id="form"  #f="ngForm" (ngSubmit)="onSignup(f)">
+    <app-input ngModel name ="full_name" placeholder="Enter your Full Name"></app-input>
+    <app-input ngModel name="email" placeholder="Enter your Email"></app-input>
+    <app-input ngModel name="password" type="password" placeholder="Enter your Password"></app-input>
+    <!-- <app-input [(ngModel)]="confirm_pass" type="password" placeholder="Confirm your Password"></app-input> -->
+    <ion-button expand="block" type="submit" shape="round" >Join our App</ion-button>
+  </form>
+
+  <p>By pressing 'Join our App', you agree to <br />our terms & conditions.</p>
+</ion-content>

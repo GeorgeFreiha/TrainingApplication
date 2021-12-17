@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Program Library</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login" color="primary">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-card *ngFor="let program of programs">
+    <img src="{{program.program_img}}" />
+    <ion-card-header>
+      <ion-card-title>{{program.program_name}}</ion-card-title>
+  
+      <ion-card-subtitle>{{program.program_type}}</ion-card-subtitle>
+      <ion-button expand="block"  >View Program</ion-button>
+  
+    </ion-card-header>
+  
+    
+  </ion-card> -->
+  <app-program></app-program>
+ 
+  
+</ion-content>

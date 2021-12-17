@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Exercise library</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login" color="primary">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <app-musclegroup
+    routerLink="/chest-exercises"
+    [musclegroup]="'Chest'"
+    [nbOfVideos]="'3 Videos'"
+  ></app-musclegroup>
+  <app-musclegroup
+    routerLink="/legs-exercises"
+    [musclegroup]="'Legs'"
+    [nbOfVideos]="'3 Videos'"
+  ></app-musclegroup>
+  <app-musclegroup
+    routerLink="/back-exercises"
+    [musclegroup]="'Back'"
+    [nbOfVideos]="'3 Videos'"
+  ></app-musclegroup>
+  <app-musclegroup
+    routerLink="/arms-exercises"
+    [musclegroup]="'Arms'"
+    [nbOfVideos]="'3 Videos'"
+  ></app-musclegroup>
+  <app-musclegroup
+    routerLink="/delts-exercises"
+    [musclegroup]="'Delts'"
+    [nbOfVideos]="'3 Videos'"
+  ></app-musclegroup>
+</ion-content>
